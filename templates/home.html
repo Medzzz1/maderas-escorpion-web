@@ -11,11 +11,42 @@
         width: 100%;
         object-fit: cover;
       }
+      
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%)
+        }
+      }
+
+      .animateslide {
+        overflow: hidden;
+        padding: 27px 0px;
+        white-space: nowrap;
+      }
+
+      .animate-text {
+        display: inline-block;
+        animation: 20s slide infinite linear;
+      }
+
+      
     </style>
+    <div class="animateslide">
+      <div class="animate-text">
+        <p class="p-2 mb-2 bg-warning-subtle text-warning-emphasis" id="banmov1"> Por compras sobre 5 paquetes obtienes envío gratis.&emsp;&emsp;&emsp;Válido sólo para la RM.&emsp;&emsp;&emsp;Contacto +569 9999 9999.&emsp;&emsp;&emsp;Despacho de 1 a 2 días hábiles.</p>
+      </div>
+      <div class="animate-text">
+        <p class="p-2 mb-2 bg-warning-subtle text-warning-emphasis" id="banmov1"> Por compras sobre 5 paquetes obtienes envío gratis.&emsp;&emsp;&emsp;Válido sólo para la RM.&emsp;&emsp;&emsp;Contacto +569 9999 9999.&emsp;&emsp;&emsp;Despacho de 1 a 2 días hábiles.</p>
+      </div>
+    </div>
   </head>
   <body>
     <div class="container">
-    <h1>MADERAS ESCORPION</h1>
+    <h1>MADERAS</h1> 
+      <h1>ESCORPION</h1>
     <button>Inicio</button> <button>Productos</button> <button>Nosotros</button> <button>Contacto</button>
     <img class="img-fluid" id="banner1" src="https://5f2a642d-8baa-4021-9ad2-6f55895c0b71-00-2sz59jctn87fn.kirk.replit.dev/static/banner.jpg" height="150" width="500" >
     <h2>Categorías</h2>
